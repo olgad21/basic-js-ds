@@ -19,19 +19,13 @@ class Stack {
 
   push(element) {
     this.stack.push(element);
-    console.log(this.stack)
   }
 
   pop() {
-
-    const peekEl = this.peek();
-    this.stack.pop();
-    
-    return peekEl
+    return this.stack.pop();
   }
 
   peek() {
-    console.log(this.stack[this.stack.length-1]);
     return this.stack[this.stack.length-1];
   }
 }
